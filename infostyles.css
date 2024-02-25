@@ -1,0 +1,178 @@
+html{
+    background-color: rgb(37, 37, 37);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+}
+
+#welcome-section{
+    color: white;
+    text-align: center;
+    margin: 0 100px;
+    margin-top: 30vh;
+    text-shadow: 3px 5px 5px black;
+    font-size: 22px;
+
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 185, 200);
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+a:hover{
+    text-shadow: 3px 1px 5px rgb(0, 185, 200, 0.6);
+}
+
+#info-link{
+    text-transform: lowercase;
+    font-size: 30px;
+}
+
+#info-link:hover{
+    font-weight: bold;
+}
+
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 30px;
+    background-color: black;
+    border-bottom: 1px solid rgb(62, 62, 62);
+    box-shadow: 1px 3px 50px black;
+    text-transform: uppercase;
+}
+
+#navbar > a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: 0px solid white;
+    padding: 25px;
+    justify-content: start;
+}
+
+#navbar > a:hover{
+    background-color: rgb(0, 185, 200, 0.7);
+    text-shadow: 3px 5px 2px black;
+}
+
+
+h2{
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    font-size: 18px;
+    border-bottom: 1px solid white;
+}
+
+#projects{
+    background-color: rgb(0, 185, 200, 0.6);
+    border-radius: 10px;
+    height: 2150px;
+    margin-top: 39vh;
+    border: 1px solid 1px solid rgb(62, 62, 62);
+    box-shadow: 1px 3px 50px black;
+}
+
+img{
+    height: 400px;
+    width: 650px;
+}
+
+.project-tile{
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid rgb(0, 185, 200, 0.6);
+    border-radius: 5px;
+    width: 650px;
+    background-color: black;
+    margin-bottom: 25px;
+    padding: 10px;
+    box-shadow: 5px 5px 25px black;;
+}
+
+.project-tile:hover{
+    box-shadow: 2px 2px 35px black;;
+}
+
+#contact > h1 {
+    text-align: center;
+    color: white;
+    font-size: 38px;
+    padding-top: 250px;
+}
+
+#contact > p {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    padding-bottom: 50px;
+}
+#contact-links{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+#contact-links img{
+    height: 75px;
+    width: 75px;
+}
+
+#contact-links img:hover{
+    height: 80px;
+    width: 80px;
+}
+
+footer{
+    background-color: rgb(0, 185, 200, 0.6);
+    height: 150px;
+    width: 100%;
+    overflow-x: hidden;
+
+}
+
+footer > p{
+    display: flex;
+    justify-content: end;
+    font-size: 10px;
+    color: white;
+    padding-top: 73px;
+    margin: 0 15px;
+}
+
+@media (max-width: 725px){
+    html {
+        width: 90%;
+        aspect-ratio: 1;
+        margin: 0 auto;
+
+    }
+    .project-tile{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    img{
+        width: 100%;
+        height: 90%;
+    }
+    .project-tile p{
+        margin-top: 9px;
+        font-size: 12px;
+    }
+    footer{
+        width: 100%
+    }
+}
+@media print{
+    #navbar{
+        display: none;
+    }
+}
