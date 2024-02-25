@@ -155,10 +155,10 @@ footer > p{
 
     }
 
-    #welcome-section h1{
+    h1{
         font-size: 22px;
     }
-    
+
     a{
         font-size: 12px;
     }
@@ -183,19 +183,18 @@ footer > p{
         font-size: 8px;
     }
 
-    .contact{
-        width: 25px;
-        height: 25px;
-    }
-
-    #contact > h1{
-        font-size: 6px;
-    }
-
     #contact-links{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    #contact > h1 {
+        font-size: 22px;
+    }
+
+    #contact > p {
+        font-size: 12px;
     }
 
     footer{
