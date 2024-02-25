@@ -154,9 +154,23 @@ footer > p{
         margin: 0 auto;
 
     }
+
+    #welcome-section p{
+        font-size: 12px;
+    }
+
+    a{
+        font-size: 12px;
+    }
+    #projects{
+        height: 60%;
+        padding-bottom: 20px;
+    }
+
     .project-tile{
         width: 80%;
         margin: 0 auto;
+        margin-bottom: 15px;
     }
 
     img{
@@ -164,13 +178,31 @@ footer > p{
         height: 90%;
     }
     .project-tile p{
-        margin-top: 9px;
-        font-size: 12px;
+        margin: 0;
+        font-size: 8px;
     }
+
+    .contact{
+        width: 25px;
+        height: 25px;
+    }
+
+    #contact > h1{
+        font-size: 6px;
+    }
+
+    #contact-links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     footer{
-        width: 100%
+        width: 100%;
+        font-size: 6px;
     }
 }
+
 @media print{
     #navbar{
         display: none;
