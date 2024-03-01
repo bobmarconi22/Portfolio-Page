@@ -16,7 +16,7 @@ html{
 
 a{
     text-decoration: none;
-    color: rgb(0, 185, 200);
+    color: rgb(153, 207, 251);
     text-transform: uppercase;
     font-size: 18px;
 }
@@ -55,22 +55,57 @@ a:hover{
 }
 
 #navbar > a:hover{
-    background-color: rgb(0, 185, 200, 0.7);
-    text-shadow: 3px 5px 2px black;
+    background-image: linear-gradient(
+        90deg,
+        hsl(211deg 90% 37%) 0%,
+        hsl(211deg 81% 40%) 11%,
+        hsl(211deg 72% 43%) 22%,
+        hsl(211deg 65% 46%) 31%,
+        hsl(211deg 58% 49%) 39%,
+        hsl(211deg 58% 53%) 47%,
+        hsl(211deg 59% 57%) 54%,
+        hsl(211deg 60% 60%) 61%,
+        hsl(211deg 62% 64%) 67%,
+        hsl(212deg 63% 68%) 73%,
+        hsl(212deg 65% 72%) 79%,
+        hsl(212deg 68% 76%) 84%,
+        hsl(212deg 71% 80%) 90%,
+        hsl(212deg 76% 85%) 95%,
+        hsl(212deg 85% 89%) 100%
+      );
+    text-shadow: 1px 1px 2px black;
 }
 
 
 h2{
     text-align: center;
-    color: white;
+    color: black;
     padding-top: 30px;
     padding-bottom: 25px;
     font-size: 18px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid black;
 }
 
 #projects{
-    background-color: rgb(0, 185, 200, 0.6);
+    background-image: linear-gradient(
+        0deg,
+        hsl(223deg 100% 21%) 0%,
+        hsl(221deg 99% 23%) 11%,
+        hsl(220deg 97% 25%) 20%,
+        hsl(218deg 96% 27%) 29%,
+        hsl(216deg 95% 29%) 37%,
+        hsl(215deg 93% 31%) 45%,
+        hsl(213deg 92% 33%) 51%,
+        hsl(212deg 91% 36%) 58%,
+        hsl(211deg 82% 39%) 64%,
+        hsl(211deg 66% 45%) 70%,
+        hsl(211deg 57% 52%) 75%,
+        hsl(211deg 59% 58%) 80%,
+        hsl(212deg 62% 66%) 85%,
+        hsl(212deg 66% 73%) 90%,
+        hsl(212deg 72% 81%) 95%,
+        hsl(212deg 85% 89%) 100%
+      );
     border-radius: 10px;
     height: 2150px;
     margin-top: 40vh;
@@ -131,7 +166,7 @@ img{
 }
 
 footer{
-    background-color: rgb(0, 185, 200, 0.6);
+    background-color: hsl(221deg 99% 23%);
     height: 150px;
     width: 100%;
     overflow-x: hidden;
