@@ -42,10 +42,42 @@ header{
     justify-content: flex-start;
   }
 
+  #navbar a {
+    position: relative;
+    text-decoration: none;
+    padding: 20px 20px 5px 20px;
+    color: white;
+}
 
+#navbar a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: rgb(0, 225, 255);
+    transition: width 0.3s ease-in-out;
+}
+
+#navbar a:hover::before {
+    width: 100%;
+}
+
+#navbar a::active {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: rgb(0, 225, 255);
+
+}
   section{
     padding-top: 140px;
     margin-top: -140px;
+    padding-bottom: 600px;
   }
 
   #welcome-section {
@@ -59,7 +91,7 @@ header{
 
   #welcome-section > h2 {
     color: white;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 100;
     font-weight: 200px;
   }
@@ -87,53 +119,31 @@ header{
     text-shadow: 3px 1px 5px rgba(0, 185, 200, 0.6);
   }
 
-  #navbar a {
-    position: relative;
-    text-decoration: none;
-    padding: 20px 20px 5px 20px;
-    color: white;
-}
-
-#navbar a::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 3px;
-    background-color: rgb(0, 225, 255);
-    transition: width 0.3s ease-in-out;
-}
-
-#navbar a:hover::before {
-    width: 100%;
-}
 
 
   #projects {
-    border-radius: 10px;
-    height: 2150px;
-    margin-top: 40vh;
-    border: 1px solid rgb(62, 62, 62);
-    box-shadow: 1px 3px 50px black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
   }
 
+
   img {
-    height: 450px;
-    width: 650px;
+    width: 700px;
+    height: 500px;
   }
+
+
 
   .project-tile {
     display: flex;
-    margin: 0 auto;
-    border: 1px solid rgba(0, 185, 200, 0.6);
-    border-radius: 5px;
-    height: 450px;
-    width: 650px;
-    margin-bottom: 25px;
-    box-shadow: 5px 5px 25px black;
+    height: 500px;
+    width: 700px;
+    margin:15px;
     position: relative;
     overflow: hidden;
+
   }
 
   .project-tile .film {
