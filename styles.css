@@ -1,244 +1,263 @@
 html{
     background-color: rgb(37, 37, 37);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-image: linear-gradient(
+        225deg,
+        hsl(192deg 100% 43%) -1%,
+        hsl(193deg 95% 42%) -1%,
+        hsl(193deg 92% 40%) 0%,
+        hsl(194deg 90% 37%) 4%,
+        hsl(196deg 87% 34%) 9%,
+        hsl(197deg 84% 31%) 16%,
+        hsl(201deg 80% 28%) 26%,
+        hsl(208deg 75% 23%) 42%,
+        hsl(253deg 100% 15%) 86%
+      );
+      scroll-behavior: smooth;
+      scroll-padding: 40px;
 }
 
-#welcome-section{
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30vh;
-    text-shadow: 3px 5px 5px black;
-    font-size: 38px;
-}
-
-a{
-    text-decoration: none;
-    color: rgb(153, 207, 251);
-    text-transform: uppercase;
-    font-size: 18px;
-}
-
-a:hover{
-    text-shadow: 3px 1px 5px rgb(0, 185, 200, 0.6);
-}
-
-#info-link{
-    text-transform: lowercase;
-    font-size: 30px;
-}
-
-#info-link:hover{
-    font-weight: bold;
-}
-
-#navbar{
+header{
     position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 97%;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 25px 30px;
-    background-color: black;
-    border-bottom: 1px solid rgb(62, 62, 62);
-    box-shadow: 1px 3px 50px black;
+    padding: 5px 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    border-bottom: 0px solid black;
+    box-shadow: 1px 3px 50px rgba(0, 0, 0, 0.4);
     text-transform: uppercase;
+    z-index: 1;
 }
 
-#navbar > a{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    border: 0px solid white;
-    padding: 25px;
-    justify-content: start;
-}
-
-#navbar > a:hover{
-    background-image: linear-gradient(
-        90deg,
-        hsl(211deg 90% 37%) 0%,
-        hsl(211deg 81% 40%) 11%,
-        hsl(211deg 72% 43%) 22%,
-        hsl(211deg 65% 46%) 31%,
-        hsl(211deg 58% 49%) 39%,
-        hsl(211deg 58% 53%) 47%,
-        hsl(211deg 59% 57%) 54%,
-        hsl(211deg 60% 60%) 61%,
-        hsl(211deg 62% 64%) 67%,
-        hsl(212deg 63% 68%) 73%,
-        hsl(212deg 65% 72%) 79%,
-        hsl(212deg 68% 76%) 84%,
-        hsl(212deg 71% 80%) 90%,
-        hsl(212deg 76% 85%) 95%,
-        hsl(212deg 85% 89%) 100%
-      );
-    text-shadow: 1px 1px 2px black;
-}
+  #logo {
+    color: rgb(0, 225, 255);
+    justify-content: flex-start;
+  }
 
 
-h2{
-    text-align: center;
-    color: black;
-    padding-top: 30px;
-    padding-bottom: 25px;
+  section{
+    padding-top: 140px;
+    margin-top: -140px;
+  }
+
+  #welcome-section {
+    color: white;
+    margin-top: 30vh;
+    padding-top: 140px;
+    margin-top: -140px;
+    margin-left: 12px;
+    text-shadow: 3px 5px 5px black;
+  }
+
+  #welcome-section > h2 {
+    color: white;
+    font-size: 60px;
+    font-weight: 100;
+    font-weight: 200px;
+  }
+
+
+  #top-p{
+    padding-top: 250px;
+    font-weight: 200;
+    font-size: 22px;
+  }
+
+  #welcome-section p{
     font-size: 18px;
-    border-bottom: 1px solid black;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 300px;
+    color: rgb(153, 207, 251);
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+
+  a:hover {
+    text-shadow: 3px 1px 5px rgba(0, 185, 200, 0.6);
+  }
+
+  #navbar a {
+    position: relative;
+    text-decoration: none;
+    padding: 20px 20px 5px 20px;
+    color: white;
 }
 
-#projects{
-    background-image: linear-gradient(
-        0deg,
-        hsl(223deg 100% 21%) 0%,
-        hsl(221deg 99% 23%) 11%,
-        hsl(220deg 97% 25%) 20%,
-        hsl(218deg 96% 27%) 29%,
-        hsl(216deg 95% 29%) 37%,
-        hsl(215deg 93% 31%) 45%,
-        hsl(213deg 92% 33%) 51%,
-        hsl(212deg 91% 36%) 58%,
-        hsl(211deg 82% 39%) 64%,
-        hsl(211deg 66% 45%) 70%,
-        hsl(211deg 57% 52%) 75%,
-        hsl(211deg 59% 58%) 80%,
-        hsl(212deg 62% 66%) 85%,
-        hsl(212deg 66% 73%) 90%,
-        hsl(212deg 72% 81%) 95%,
-        hsl(212deg 85% 89%) 100%
-      );
+#navbar a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: rgb(0, 225, 255);
+    transition: width 0.3s ease-in-out;
+}
+
+#navbar a:hover::before {
+    width: 100%;
+}
+
+
+  #projects {
     border-radius: 10px;
     height: 2150px;
     margin-top: 40vh;
-    border: 1px solid 1px solid rgb(62, 62, 62);
+    border: 1px solid rgb(62, 62, 62);
     box-shadow: 1px 3px 50px black;
-}
+  }
 
-img{
-    height: 400px;
+  img {
+    height: 450px;
     width: 650px;
-}
+  }
 
-.project-tile{
+  .project-tile {
     display: flex;
-    text-align: center;
     margin: 0 auto;
-    border: 1px solid rgb(0, 185, 200, 0.6);
+    border: 1px solid rgba(0, 185, 200, 0.6);
     border-radius: 5px;
+    height: 450px;
     width: 650px;
-    background-color: black;
     margin-bottom: 25px;
-    padding: 10px;
-    box-shadow: 5px 5px 25px black;;
-}
+    box-shadow: 5px 5px 25px black;
+    position: relative;
+    overflow: hidden;
+  }
 
-.project-tile:hover{
-    box-shadow: 2px 2px 35px black;;
-}
+  .project-tile .film {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+    text-align: center;
+  }
 
-#contact > h1 {
+  .project-tile:hover .film {
+    opacity: 1;
+  }
+
+  #contact > h1 {
     text-align: center;
     color: white;
     font-size: 38px;
     padding-top: 250px;
-}
+  }
 
-#contact > p {
+  #contact > p {
     text-align: center;
     color: white;
     font-size: 15px;
     padding-bottom: 50px;
-}
-#contact-links{
+  }
+
+  #contact-links {
     display: flex;
     gap: 60px;
     justify-content: center;
     margin-bottom: 150px;
-}
+  }
 
-#contact-links img{
+  #contact-links img {
     height: 75px;
     width: 75px;
-}
+  }
 
-#contact-links img:hover{
+  #contact-links img:hover {
     height: 80px;
     width: 80px;
-}
+  }
 
-footer{
-    background-color: hsl(221deg 99% 23%);
-    height: 150px;
+  footer {
+    background-color: rgba(25, 56, 179, 0.7);
+    height: 30px;
     width: 100%;
-    overflow-x: hidden;
+  }
 
-}
-
-footer > p{
+  footer > p {
     display: flex;
-    justify-content: end;
-    font-size: 10px;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 15px;
+    font-weight: 400;
     color: white;
-    padding-top: 73px;
     margin: 0 15px;
-}
+  }
 
-@media (max-width: 725px){
+  @media (max-width: 725px) {
     html {
-        width: 90%;
-        aspect-ratio: 1;
-        margin: 0 auto;
-
+      width: 90%;
+      aspect-ratio: 1;
+      margin: 0 auto;
     }
 
-    h1{
-        font-size: 22px;
+    h1 {
+      font-size: 22px;
     }
 
-    a{
-        font-size: 12px;
+    a {
+      font-size: 12px;
     }
 
-    #projects{
-        height: 60%;
-        padding-bottom: 20px;
+    #projects {
+      height: 60%;
+      padding-bottom: 20px;
     }
 
-    .project-tile{
-        width: 80%;
-        margin: 0 auto;
-        margin-bottom: 15px;
+    .project-tile {
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 15px;
     }
 
-    img{
-        width: 100%;
-        height: 90%;
-    }
-    .project-tile p{
-        margin: 0;
-        font-size: 8px;
+    img {
+      width: 100%;
+      height: 90%;
     }
 
-    #contact-links{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .project-tile p {
+      margin: 0;
+      font-size: 8px;
+    }
+
+    #contact-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     #contact > h1 {
-        font-size: 22px;
+      font-size: 22px;
     }
 
     #contact > p {
-        font-size: 12px;
+      font-size: 12px;
     }
 
-    footer{
-        width: 100%;
-        font-size: 6px;
+    footer {
+      width: 100%;
+      font-size: 6px;
     }
-}
-@media print{
-    #navbar{
-        display: none;
+  }
+
+  @media print {
+    #navbar {
+      display: none;
     }
-}
+  }

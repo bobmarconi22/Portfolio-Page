@@ -177,6 +177,7 @@ footer > p{
     display: flex;
     justify-content: end;
     font-size: 10px;
+    font-weight: 700px;
     color: white;
     padding-top: 73px;
     margin: 0 15px;
