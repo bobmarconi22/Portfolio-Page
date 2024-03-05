@@ -170,8 +170,8 @@ header{
     display: flex;
     flex-shrink: inherit;
     flex-wrap: wrap;
-    justify-content: start;
-    max-width: 90%;
+    justify-content: center;
+    max-width: 98%;
   }
 
   img {
