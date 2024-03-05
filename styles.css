@@ -86,15 +86,30 @@ header{
     margin-top: -140px;
     margin-left: 12px;
     text-shadow: 3px 5px 5px black;
+    justify-content: start;
+    margin-left: 100px;
   }
 
-  #welcome-section > h2 {
+  #welcome-section h2 {
     color: whitesmoke;
     font-size: 40px;
     font-weight: 100;
     font-weight: 200px;
   }
 
+    #main-line{
+      display: flex;
+      justify-content: space-between;
+      margin: inherit 500px;
+    }
+
+    #main-line img{
+      margin-right: 3em;
+      border: 1px solid transparent;
+      border-radius: 15px;
+      width: 400px;
+      height: 400px;
+    }
 
   #top-p{
     padding-top: 250px;
@@ -121,8 +136,9 @@ header{
   #contact-links {
     display: flex;
     gap: 60px;
-    justify-content: start;
-    margin-left: 15px;
+    justify-content: right;
+    margin-top: 10px;
+    margin-right: 5em;
     margin-bottom: 150px;
   }
 
@@ -223,15 +239,25 @@ header{
     margin: 0 15px;
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 850px) {
     html {
       width: 100%;
       aspect-ratio: 1;
       margin: 0 auto;
     }
+    #welcome-section{
+      margin: 0;
+      padding: 0;
+      flex-direction: row;
+    }
+
+    #welcome-section img{
+      height: 200px;
+      width: 200px;
+    }
 
     h1 {
-      font-size: 18px;
+      font-size: 15px;
     }
 
     a {
