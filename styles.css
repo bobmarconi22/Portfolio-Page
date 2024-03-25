@@ -46,6 +46,7 @@ header{
     text-decoration: none;
     padding: 20px 20px 5px 20px;
     color: whitesmoke;
+    margin-right: 40px;
 }
 
 #navbar a::before {
